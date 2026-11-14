@@ -1,0 +1,84 @@
+
+name: Feature Request
+description: Propose a new capability or improvement for BuzzCloud.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing an idea to BuzzCloud.
+        Describe the problem and proposed outcome.
+        Features should support our local-first,
+        proximity-based, modular architecture.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or need
+      description: What problem should this feature solve?
+      placeholder: Describe the need, not just the implementation.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: Describe how the feature might work.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: BuzzCloud component
+      description: Which architectural component is primarily affected?
+      options:
+        - Cell
+        - Stinger
+        - Honeycomb
+        - Hive
+        - Queen
+        - Shared protocol
+        - Development infrastructure
+        - Undetermined
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Are there simpler approaches or existing solutions?
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: How will we know this feature works?
+      placeholder: |
+        - [ ] The system can...
+        - [ ] The feature continues working offline when applicable...
+
+  - type: checkboxes
+    id: principles
+    attributes:
+      label: Architectural considerations
+      description: Select the principles considered in this proposal.
+      options:
+        - label: Local-first operation
+        - label: Proximity-based trust
+        - label: Individual and community autonomy
+        - label: Modular infrastructure
+        - label: Realistic hardware limitations
+
+  - type: checkboxes
+    id: verification
+    attributes:
+      label: Verification
+      options:
+        - label: I searched for existing feature requests.
+          required: true
+        - label: I understand that submitting a proposal does not guarantee implementation.
+          required: true

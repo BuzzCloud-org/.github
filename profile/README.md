@@ -30,4 +30,4 @@ BuzzCloud is currently in early development, with initial engineering focused on
 
 Project repositories, technical documentation, and contribution information will be published as development progresses.
 
-**Website:** https://buzzcloud.com
+**Website:** https://buzzcloud.org

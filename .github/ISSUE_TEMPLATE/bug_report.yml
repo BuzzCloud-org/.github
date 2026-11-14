@@ -1,0 +1,70 @@
+
+name: Bug Report
+description: Report a reproducible defect in BuzzCloud.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a bug.
+        Do not include passwords, credentials, or
+        sensitive information. Report security
+        vulnerabilities privately.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug description
+      description: What is happening?
+      placeholder: Describe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Start with...
+        2. Perform...
+        3. Observe...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant hardware, firmware, OS, and software versions.
+      placeholder: |
+        Device:
+        Firmware version:
+        Operating system:
+        Software version:
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Include relevant diagnostic information.
+      render: shell
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Verification
+      options:
+        - label: I searched for existing reports of this bug.
+          required: true
+        - label: I removed credentials and sensitive information.
+          required: true
